@@ -1,0 +1,135 @@
+# depslib dependency file v1.0
+1524760723 source:c:\users\huypv12\game_quan\xepginh\console.cpp
+	<iostream>
+	<stdio.h>
+	<conio.h>
+	"console.h"
+
+1524760723 c:\users\huypv12\game_quan\xepginh\console.h
+	<windows.h>
+
+1524762986 source:c:\users\huypv12\game_quan\xepginh\main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	"ICreatBrick.h"
+
+1524762989 source:c:\users\huypv12\game_quan\xepginh\creatbrick.cpp
+	"ICreatBrick.h"
+
+1524763085 c:\users\huypv12\game_quan\xepginh\icreatbrick.h
+	"IMap.h"
+	<ctime>
+	<cstdlib>
+	<iostream>
+
+1524763112 c:\users\huypv12\game_quan\xepginh\imap.h
+	"console.h"
+	<iostream>
+
+1525364728 source:c:\users\black\game_quan\xepginh\console.cpp
+	<iostream>
+	<stdio.h>
+	<conio.h>
+	"Iconsole.h"
+
+1525186374 c:\users\black\game_quan\xepginh\console.h
+	<windows.h>
+
+1525164437 source:c:\users\black\game_quan\xepginh\creatbrick.cpp
+	"ICreatBrick.h"
+
+1525164437 c:\users\black\game_quan\xepginh\icreatbrick.h
+	"console.h"
+	<ctime>
+	<cstdlib>
+	<iostream>
+
+1525364757 c:\users\black\game_quan\xepginh\imap.h
+	"Iconsole.h"
+	"INFO.h"
+	"IdesignObject.h"
+	<iostream>
+
+1525364621 source:c:\users\black\game_quan\xepginh\main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<windows.h>
+	<conio.h>
+	"IdesignObject.h"
+	"ImoveObject.h"
+	"IMap.h"
+	"INFO.h"
+	"Icheck.h"
+	"IdrawObject.h"
+	"Imenu.h"
+
+1525164437 source:c:\users\black\game_quan\xepginh\map.cpp
+	"IMap.h"
+
+1525076473 source:c:\users\black\game_quan\xepginh\movebrick.cpp
+	"ImoveBrick.h"
+
+1525076537 c:\users\black\game_quan\xepginh\imovebrick.h
+	"ICreatBrick.h"
+
+1525158923 source:c:\users\black\game_quan\xepginh\info.cpp
+	"INFO.h"
+
+1525364757 c:\users\black\game_quan\xepginh\info.h
+	<iostream>
+	"Iconsole.h"
+
+1525271156 source:c:\users\black\game_quan\xepginh\check.cpp
+	"Icheck.h"
+
+1525364215 c:\users\black\game_quan\xepginh\icheck.h
+	<conio.h>
+	"ImoveObject.h"
+	"INFO.h"
+	"IMap.h"
+	"IdrawObject.h"
+
+1525186139 c:\users\black\game_quan\xepginh\ivexoakhoigach.h
+	<iostream>
+	"ICreatBrick.h"
+	"Icheck.h"
+
+1525186139 source:c:\users\black\game_quan\xepginh\vexoakhoigach.cpp
+	"IveXoaKhoiGach.h"
+
+1525364621 c:\users\black\game_quan\xepginh\imoveobject.h
+	"IdesignObject.h"
+
+1525164636 source:c:\users\black\game_quan\xepginh\moveobject.cpp
+	"ImoveObject.h"
+
+1525270885 source:c:\users\black\game_quan\xepginh\menu.cpp
+	"Imenu.h"
+
+1525364728 c:\users\black\game_quan\xepginh\imenu.h
+	"Iconsole.h"
+	<iostream>
+	<conio.h>
+
+1525364621 c:\users\black\game_quan\xepginh\idrawobject.h
+	<iostream>
+	"IdesignObject.h"
+	"Icheck.h"
+
+1525364757 c:\users\black\game_quan\xepginh\idesignobject.h
+	"Iconsole.h"
+	<ctime>
+	<cstdlib>
+	<iostream>
+
+1525364215 source:c:\users\black\game_quan\xepginh\drawobject.cpp
+	"IdrawObject.h"
+
+1525364621 source:c:\users\black\game_quan\xepginh\designobject.cpp
+	"IdesignObject.h"
+
+1525186374 c:\users\black\game_quan\xepginh\iconsole.h
+	<windows.h>
+
