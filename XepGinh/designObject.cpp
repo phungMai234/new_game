@@ -3,32 +3,32 @@
 
 KhoiGach* TaoKhoiGach(int ID)
 {
-    KhoiGach* pKhoiGach = new KhoiGach; // cap phat bo nho
+    KhoiGach* pKhoiGach = new KhoiGach;
 
     if(ID == 15)
     {
         pKhoiGach->Row = 4;
         pKhoiGach->Col = 1;
-        pKhoiGach->iBoard = 0; // qd hien thi ra man hinh
+        pKhoiGach->iBoard = 0;
         pKhoiGach->jBoard = 5;
     }
     else if(ID == 31)
     {
         pKhoiGach->Row = 2;
         pKhoiGach->Col = 2;
-        pKhoiGach->iBoard = 2; // de roi xuong
+        pKhoiGach->iBoard = 2;
         pKhoiGach->jBoard = 5;
     }
     else
     {
         pKhoiGach->Row = 2;
         pKhoiGach->Col = 3;
-        pKhoiGach->iBoard = 2; // ngay mep ma tran hien thi
+        pKhoiGach->iBoard = 2;
         pKhoiGach->jBoard = 5;
 
     }
 
-    pKhoiGach->arr = new int*; // mang 2 chieu
+    pKhoiGach->arr = new int*;
 
     int i;
     for(i = 0; i < pKhoiGach->Row; i++)
@@ -41,9 +41,19 @@ KhoiGach* TaoKhoiGach(int ID)
         pKhoiGach->arr[i / pKhoiGach->Col][i % pKhoiGach->Col] = (ID >> (pKhoiGach->Col * pKhoiGach->Row - 1 - i)) & 1;
     }
 
-    return pKhoiGach; // khieu con tro
+    return pKhoiGach;
 }
-int Loai()
+void huyKhoiGach(KhoiGach* pKhoiGach)
+{
+
+    int i;
+    for(i = 0; i < pKhoiGach->Row; i++)
+        delete [] pKhoiGach->arr[i];
+    delete [] pKhoiGach->arr;
+    pKhoiGach = NULL;
+}
+
+int randomObject()
 {
 
     srand(time(NULL));
@@ -76,4 +86,5 @@ int Loai()
     {
         return 60;
     }
+    return 0;
 }

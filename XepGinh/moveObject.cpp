@@ -1,6 +1,8 @@
 
 #include"ImoveObject.h"
 
+/*Move each small brick*/
+
 bool inside(int i, int j)
 {
     if(i >= 0 && i < MaxI && j >= 0 && j < MaxJ)
@@ -24,11 +26,14 @@ bool right(int i, int j)
 }
 bool down(int i, int j)
 {
-    if( i < MaxI - 1&& inside(i, j) == true && Board[i + 1][j] == 0) // board
+    if( i < MaxI - 1 && inside(i, j) == true && Board[i + 1][j] == 0) // board
         return true;
     else
         return false;
 }
+
+
+/*move blocks of bricks*/
 
 void moveLeftObject(KhoiGach* pKhoiGach)
 {
@@ -41,7 +46,7 @@ void moveLeftObject(KhoiGach* pKhoiGach)
             if(pKhoiGach->arr[i][j] == 1)
             {
                 if(left(pKhoiGach->iBoard + i, pKhoiGach->jBoard + j) == false)
-                    return; //dung
+                    return;
             }
         }
     }
@@ -59,12 +64,13 @@ void moveRightObject(KhoiGach* pKhoiGach)
             if(pKhoiGach->arr[i][j] == 1)
             {
                 if(right(pKhoiGach->iBoard + i, pKhoiGach->jBoard + j) == false)
-                    return; //dung
+                    return;
             }
         }
     }
     pKhoiGach->jBoard++;
 }
+
 bool moveDownObject(KhoiGach* pKhoiGach)
 {
     int i, j;
@@ -76,15 +82,17 @@ bool moveDownObject(KhoiGach* pKhoiGach)
             if(pKhoiGach->arr[i][j] == 1)
             {
                 if(down(pKhoiGach->iBoard + i, pKhoiGach->jBoard + j) == false)
-                    return false; //dung
+                    return false;
             }
         }
     }
     pKhoiGach->iBoard++;
     return true;
 }
+
 void rotateObject(KhoiGach* pKhoiGach) // hoi
 {
+    // xoay khoi gach la xoay tai cho
     // iBoard, jBoard k thay doi, vi tri khoi gach van giu nguyen
     int i, j;
     int **tmpArr; // mang tam thoi luu khoi gach da xoay
@@ -123,9 +131,11 @@ void rotateObject(KhoiGach* pKhoiGach) // hoi
 
     // giai phong khoi gach trc khi xoay
 
-    for(i = 0; i < pKhoiGach->Row; i++)
-        delete [] pKhoiGach->arr[i];
-    delete [] pKhoiGach->arr;
+   // sao k goi dc ham huykhoigach
+    huyKhoiGach(pKhoiGach);
+//    for(i = 0; i < pKhoiGach->Row; i++)
+//        delete [] pKhoiGach->arr[i];
+//    delete [] pKhoiGach->arr;
 
     // cap nhat thay doi sau khi xoay
 

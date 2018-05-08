@@ -10,7 +10,6 @@
 #include"IdrawObject.h"
 
 int kiemTra(KhoiGach*, INFO*);
-void huyKhoiGach(KhoiGach*);
 bool ingameSence();
 
 #endif // ICHECK_H_INCLUDED

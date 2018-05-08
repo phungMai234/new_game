@@ -10,7 +10,7 @@ void VeKhoiGach(KhoiGach* pKhoiGach)
             if(pKhoiGach->arr[i][j] == 1 && pKhoiGach->iBoard > 3)
             {
                 gotoXY(LEFT + pKhoiGach->jBoard + j + 1, TOP + pKhoiGach->iBoard + i - 3);
-                TextColor(15);
+                TextColor(13);
                 cout << char(219);
             }
         }
@@ -33,6 +33,7 @@ void xoaKhoiGach(KhoiGach* pKhoiGach)
     }
 }
 
+/*Brick blocks are in the game information*/
 void Ve_Next(int ID)
 {
     KhoiGach *pnext=TaoKhoiGach(ID);
@@ -45,7 +46,7 @@ void Ve_Next(int ID)
         {
             if(pnext->arr[i][j]==1)
             {
-                TextColor(15);
+                TextColor(9);
                 gotoXY(iRoot+j,jRoot+i);
                 cout << char(219);
             }

@@ -16,7 +16,6 @@ extern int Board[MaxI][MaxJ];
 #include<iostream>
 
 using namespace std;
-
 // ve khung tro choi
 void render();
 // ve bang diem hien thong tin tro choi

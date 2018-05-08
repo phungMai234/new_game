@@ -20,7 +20,6 @@ using namespace std;
 int main()
 {
     char choice;
-
     do
     {
         /*Draw a main menu */

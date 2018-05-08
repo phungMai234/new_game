@@ -1,22 +1,50 @@
 #ifndef IVEXOAKHOIGACH_H_INCLUDED
 #define IVEXOAKHOIGACH_H_INCLUDED
 
-#include<iostream> // ham co su dung cout
-#include"IdesignObject.h" // goi ham tao khoi gach
+#include<iostream>
 
-#include"Icheck.h"
+#include"IdesignObject.h"
 
 using namespace std;
 
-// ham ve khoi gach de choi
-void VeKhoiGach(KhoiGach*);
-void xoaKhoiGach(KhoiGach*);
+/***********************************************************************************************************************
+ * PROTOTYPE
+ **********************************************************************************************************************/
+/*!
+ * Function: {void} VeKhoiGach(KhoiGach* pKhoiGach)
+ *
+ *@Brief: draw block object in ingameScence
+ *@Param: pKhoiGach : pointer type of KhoiGach
+ *@Return: <none>
+ */
+void VeKhoiGach(KhoiGach* pKhoiGach);
 
-void Ve_Next(int);
+/*!
+ * Function: {void} VeKhoiGach(KhoiGach* pKhoiGach)
+ *
+ *@Brief: delete block object in ingameSence
+ *@Param: pKhoiGach : pointer type of KhoiGach
+ *@Return: <none>
+ */
+void xoaKhoiGach(KhoiGach* pKhoiGach);
+
+/*!
+ * Function: {void} Ve_Next(int ID)
+ *
+ *@Brief: draw block object
+ *@Param: pKhoiGach : pointer type of KhoiGach
+ *@Return: <none>
+ */
+void Ve_Next(int ID);
+
+/*!
+ * Function: {void} Xoa_Next()
+ *
+ *@Brief: delete block object
+ *@Param: <none>
+ *@Return: <none>
+ */
 void Xoa_Next();
-
-
-
 
 
 #endif // IVEXOAKHOIGACH_H_INCLUDED
