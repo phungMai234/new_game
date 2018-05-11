@@ -4,6 +4,16 @@
 #include<iostream>
 
 #include"Idesign.h"
+#include"Iconsole.h"
+
+#define MaxI 22
+#define MaxJ 10
+
+#define TOP 4
+#define LEFT 4
+
+/*matrix*/
+extern int Board[MaxI][MaxJ];
 
 using namespace std;
 
@@ -32,6 +42,28 @@ void Ve_Next(int ID);
  * Brief: delete block object
  */
 void Xoa_Next();
+
+/*--------------------------------------------------------------*/
+
+
+/*
+ * Function: {void} render()
+ * Brief: drawing frames to display up screen
+ */
+void render();
+
+/*
+ * Function: {void} veBangDiem(INFO)
+ * Brief: drawing table current game information
+ */
+void veBangDiem(INFO info);
+
+/*
+ * Function: {void} disPlayBoard()
+ * Brief:  status value assignment for a battle
+ */
+void disPlayBoard();
+
 
 
 #endif // IVEXOAKHOIGACH_H_INCLUDED

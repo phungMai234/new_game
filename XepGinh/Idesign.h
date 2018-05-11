@@ -7,15 +7,6 @@
 #include<ctime>
 #include<cstdlib>
 
-#include<iostream>
-
-#define TOP 4
-#define LEFT 4
-
-#define MaxI 22
-#define MaxJ 10
-
-using namespace std;
 
 struct KhoiGach
 {
@@ -27,6 +18,12 @@ struct KhoiGach
     int iBoard, jBoard;
 };
 
+struct INFO
+{
+    int score;
+    int level;
+    float speed;
+};
 
 /* PROTOTYPE */
 

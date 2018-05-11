@@ -5,8 +5,8 @@
 #include<conio.h>
 
 #include"Idesign.h"
-#include"IMove.h"
-#include"IBoard.h"
+#include"IPlayer.h"
+#include"IUpdate.h"
 #include"INFO.h"
 #include"Icheck.h"
 #include"IDraw.h"

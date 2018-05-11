@@ -5,10 +5,9 @@
 
 #include<conio.h>
 
-#include"IMove.h"
-#include"INFO.h"
-#include"IBoard.h"
 #include"IDraw.h"
+#include"IUpdate.h"
+
 
 /* PROTOTYPE */
 
@@ -19,10 +18,33 @@
 int kiemTra(KhoiGach* pKhoiGach, INFO* info);
 
 /*
- * Function: {bool} playGame()
- * Brief: Player play game
+ * Function: {bool} inside(int i, int j)
+ * Brief: check small object in matrix
  */
-bool playGame();
+bool inside(int i, int j);
+
+/*
+ * Function: {bool} left(int i, int j)
+ * Brief: check small object move left (yes/no)
+ */
+bool left(int i, int j);
+
+/*
+ * Function: {bool} right(int i, int j)
+ * Brief: check small object move right (yes/no)
+ */
+bool right(int i, int j);
+
+/*
+ * Function: {bool} down(int i, int j)
+ * Brief: check small object go down (yes/no)
+ */
+bool down(int i, int j);
+
+/*
+ * Function: {void} moveLeftObject(KhoiGach* pKhoiGach)
+ * Brief: move the block object go to the left
+ */
 
 
 

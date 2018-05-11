@@ -32,18 +32,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Board.cpp" />
 		<Unit filename="Draw.cpp" />
-		<Unit filename="IBoard.h" />
 		<Unit filename="IDraw.h" />
-		<Unit filename="IMove.h" />
-		<Unit filename="INFO.cpp" />
-		<Unit filename="INFO.h" />
+		<Unit filename="IPlayer.h" />
+		<Unit filename="IUpdate.h" />
 		<Unit filename="Icheck.h" />
 		<Unit filename="Iconsole.h" />
 		<Unit filename="Idesign.h" />
 		<Unit filename="Imenu.h" />
-		<Unit filename="Move.cpp" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Update.cpp" />
 		<Unit filename="check.cpp" />
 		<Unit filename="console.cpp" />
 		<Unit filename="design.cpp" />

@@ -133,15 +133,13 @@
 1525186374 c:\users\black\game_quan\xepginh\iconsole.h
 	<windows.h>
 
-1526006184 source:c:\users\black\new_game\xepginh\check.cpp
+1526011233 source:c:\users\black\new_game\xepginh\check.cpp
 	"Icheck.h"
 
-1526008647 c:\users\black\new_game\xepginh\icheck.h
+1526011371 c:\users\black\new_game\xepginh\icheck.h
 	<conio.h>
-	"IMove.h"
-	"INFO.h"
-	"IBoard.h"
 	"IDraw.h"
+	"IUpdate.h"
 
 1526006565 c:\users\black\new_game\xepginh\imoveobject.h
 	"Idesign.h"
@@ -155,7 +153,7 @@
 1526006565 c:\users\black\new_game\xepginh\iconsole.h
 	<windows.h>
 
-1526006184 c:\users\black\new_game\xepginh\info.h
+1526012168 c:\users\black\new_game\xepginh\info.h
 	<iostream>
 	"Iconsole.h"
 
@@ -181,18 +179,18 @@
 1526006183 source:c:\users\black\new_game\xepginh\drawobject.cpp
 	"IdrawObject.h"
 
-1526006183 source:c:\users\black\new_game\xepginh\info.cpp
+1526011233 source:c:\users\black\new_game\xepginh\info.cpp
 	"INFO.h"
 
-1526008653 source:c:\users\black\new_game\xepginh\main.cpp
+1526011233 source:c:\users\black\new_game\xepginh\main.cpp
 	<iostream>
 	<ctime>
 	<cstdlib>
 	<windows.h>
 	<conio.h>
 	"Idesign.h"
-	"IMove.h"
-	"IBoard.h"
+	"IPlayer.h"
+	"IUpdate.h"
 	"INFO.h"
 	"Icheck.h"
 	"IDraw.h"
@@ -221,11 +219,10 @@
 	"Idesign.h"
 	<iostream>
 
-1526009375 c:\users\black\new_game\xepginh\idesign.h
+1526012168 c:\users\black\new_game\xepginh\idesign.h
 	"Iconsole.h"
 	<ctime>
 	<cstdlib>
-	<iostream>
 
 1526009375 c:\users\black\new_game\xepginh\imove.h
 	"Idesign.h"
@@ -245,10 +242,24 @@
 1526009133 source:c:\users\black\new_game\xepginh\move.cpp
 	"IMove.h"
 
-1526006565 c:\users\black\new_game\xepginh\idraw.h
+1526012168 c:\users\black\new_game\xepginh\idraw.h
 	<iostream>
 	"Idesign.h"
+	"INFO.h"
+	"Iconsole.h"
 
-1526009133 source:c:\users\black\new_game\xepginh\draw.cpp
-	"IBoard.h"
+1526011233 source:c:\users\black\new_game\xepginh\draw.cpp
+	"IDraw.h"
+
+1526012168 c:\users\black\new_game\xepginh\iplayer.h
+	"Icheck.h"
+
+1526012168 c:\users\black\new_game\xepginh\iupdate.h
+	"IDraw.h"
+
+1526011233 source:c:\users\black\new_game\xepginh\player.cpp
+	"IPlayer.h"
+
+1526011233 source:c:\users\black\new_game\xepginh\update.cpp
+	"IUpdate.h"
 
