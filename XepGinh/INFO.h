@@ -22,28 +22,17 @@ struct INFO
     float speed;
 };
 
-/***********************************************************************************************************************
- * PROTOTYPE
- **********************************************************************************************************************/
-/*!
+/* PROTOTYPE */
+
+/*
  * Function: {void} initGame(INFO* info)
- *
- *@Brief: Initialize the initial parameters for the game: score, level, speed
- *
- *@Param: info: type of pointer of struct name INFO
- *
- *@Return: <none>
+ * Brief: Initialize the initial parameters for the game: score, level, speed
  */
 void initGame(INFO* info);
 
-/*!
+/*
  * Function: {void} updateINFO(INFO* info)
- *
- *@Brief: Update the game parameters: score, level, speed
- *
- *@Param: info: type of pointer of struct name INFO
- *
- *@Return: <none>
+ * Brief: Update the game parameters: score, level, speed
  */
 void updateINFO(INFO* info); /* co nen di chuyen sang ham screen*/
 

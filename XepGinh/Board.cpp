@@ -1,5 +1,6 @@
-#include"IgameScreen.h"
+#include"IBoard.h"
 
+/* CODE */
 
 void render()
 {

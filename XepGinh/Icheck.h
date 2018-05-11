@@ -1,42 +1,28 @@
+
 #ifndef ICHECK_H_INCLUDED
 #define ICHECK_H_INCLUDED
 
 
 #include<conio.h>
 
-#include"ImoveObject.h"
+#include"IMove.h"
 #include"INFO.h"
-#include"IgameScreen.h"
-#include"IdrawObject.h"
+#include"IBoard.h"
+#include"IDraw.h"
 
-/***********************************************************************************************************************
- * PROTOTYPE
- **********************************************************************************************************************/
-/*!
+/* PROTOTYPE */
+
+/*
  * Function: {int} kiemTra(KhoiGach *pKhoiGach, INFO* info)
- *
- *@Brief: check matrix after each blocks brick down, eat it
- *
- *@Param: pKhoiGach: pointer type of KhoiGach
- *        info: pointer type of INFO
- *
- *@Return: -1: Game over
- *          2: Win Game
- *          1: Game continue
+ * Brief: check matrix after each blocks brick down, eat it
  */
 int kiemTra(KhoiGach* pKhoiGach, INFO* info);
 
-/*!
- * Function: {bool} ingameSence()
- *
- *@Brief: Player play game
- *
- *@Param:<none>
- *
- *@Return: true: play a new game
- *         false: exist game
+/*
+ * Function: {bool} playGame()
+ * Brief: Player play game
  */
-bool ingameSence();
+bool playGame();
 
 
 

@@ -10,38 +10,23 @@
 
 using namespace std;
 
-/***********************************************************************************************************************
- * PROTOTYPE
- **********************************************************************************************************************/
-/*!
+/* PROTOTYPE */
+
+/*
  * Function: {void} mainMenu()
- *
- *@Brief: draw main menu of option
- *
- *@Param: <none>
- *@Return: <none>
+ * Brief: draw main menu of option
  */
 void mainMenu();
 
-/*!
+/*
  * Function: {bool} help()
- *
- *@Brief: show guidance to play game
- *
- *@Param: <none>
- *@Return: true: back main menu
- *         false: exist
+ * Brief: show guidance to play game
  */
 bool help();
 
-/*!
+/*
  * Function: {bool} credit()
- *
- *@Brief: show infomation of author
- *
- *@Param: <none>
- *@Return: true: back main menu
- *         false: exist
+ * Brief: show infomation of author
  */
 bool credit();
 

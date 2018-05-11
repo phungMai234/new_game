@@ -1,5 +1,7 @@
 
-#include"IdesignObject.h"
+#include"Idesign.h"
+
+/* CODE */
 
 KhoiGach* TaoKhoiGach(int ID)
 {

@@ -4,12 +4,12 @@
 #include<windows.h>
 #include<conio.h>
 
-#include"IdesignObject.h"
-#include"ImoveObject.h"
-#include"IgameScreen.h"
+#include"Idesign.h"
+#include"IMove.h"
+#include"IBoard.h"
 #include"INFO.h"
 #include"Icheck.h"
-#include"IdrawObject.h"
+#include"IDraw.h"
 #include"Imenu.h"
 
 
@@ -37,7 +37,7 @@ int main()
         if(choice == '1')
         {
             clrscr();
-            if(!ingameSence())
+            if(!playGame())
                 break;
         }
 

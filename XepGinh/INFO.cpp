@@ -1,6 +1,8 @@
 
 #include"INFO.h"
 
+/* CODE */
+
 void initGame(INFO* info)
 {
     info->score = 0;

@@ -1,5 +1,7 @@
 
-#include"ImoveObject.h"
+#include"IMove.h"
+
+/* CODE */
 
 /*Move each small brick*/
 
@@ -131,7 +133,7 @@ void rotateObject(KhoiGach* pKhoiGach) // hoi
 
     // giai phong khoi gach trc khi xoay
 
-   // sao k goi dc ham huykhoigach
+    // sao k goi dc ham huykhoigach
     huyKhoiGach(pKhoiGach);
 //    for(i = 0; i < pKhoiGach->Row; i++)
 //        delete [] pKhoiGach->arr[i];

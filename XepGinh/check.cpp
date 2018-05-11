@@ -1,6 +1,8 @@
 
 #include"Icheck.h"
 
+/* CODE */
+
 int kiemTra(KhoiGach* pKhoiGach, INFO* info)
 {
     int i, j, countB = 0;
@@ -42,7 +44,7 @@ int kiemTra(KhoiGach* pKhoiGach, INFO* info)
     return 1;
 }
 
-bool ingameSence()
+bool playGame()
 {
     clrscr();
 
@@ -67,9 +69,9 @@ bool ingameSence()
 
     /* creat origin matrix */
 
-    for(int i = 1;i <= 20; i++)
+    for(int i = 1; i <= 20; i++)
     {
-        for(int j = 1;j <= 10; j++)
+        for(int j = 1; j <= 10; j++)
             Board[i][j] = 0;
     }
 
@@ -94,16 +96,16 @@ bool ingameSence()
 
                 xoaKhoiGach(curr);
 
-                if( key == 'a' || key == 'A' || key == 75)
+                if( key == 'a' || key == 'A' || key == key_Left)
                     moveLeftObject(curr);
 
-                if( key == 'd' || key == 'D' || key == 77)
+                if( key == 'd' || key == 'D' || key == key_Right)
                     moveRightObject(curr);
 
-                if( key == 's' || key == 'S' || key == 80)
+                if( key == 's' || key == 'S' || key == key_Down)
                     moveDownObject(curr);
 
-                if( key == 'w' || key == 'W' || key == 72)
+                if( key == 'w' || key == 'W' || key == key_Up)
                     rotateObject(curr);
 
 
@@ -112,7 +114,8 @@ bool ingameSence()
 
             End = clock();
 
-        }while(float(End - Start)/ CLK_TCK < info.speed);
+        }
+        while(float(End - Start)/ CLK_TCK < info.speed);
 
         xoaKhoiGach(curr);
 
@@ -137,7 +140,8 @@ bool ingameSence()
             disPlayBoard();
         }
 
-    }while(1);
+    }
+    while(1);
 
     huyKhoiGach(curr);
 

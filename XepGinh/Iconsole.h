@@ -26,7 +26,7 @@
 #define key_Down	80
 #define key_Left	75
 #define key_Right	77
-#define key_none	-1
+//#define key_none	-1
 
 
 
@@ -35,13 +35,26 @@
 #include <windows.h>
 
 
-//-------------------------Screen-------------------------
+/* PROTOTYPE */
+
+/*
+ * Function: {void} clrscr()
+ * Brief: clear screen
+ */
 void clrscr();
-//screen: goto [x,y]
+
+/*
+ * Function: {void} gotoXY(int column, int line)
+ * Brief: move to location
+ */
 void gotoXY (int column, int line);
 
+/*
+ * Function: {void} TextColor
+ * Brief: fill color for object
+ */
 void TextColor (int color);
-//end----------------------Screen----------------------end
+
 
 
 

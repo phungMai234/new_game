@@ -1,4 +1,6 @@
-#include"IdrawObject.h"
+#include"IBoard.h"
+
+/* CODE */
 
 void VeKhoiGach(KhoiGach* pKhoiGach)
 {
@@ -40,9 +42,9 @@ void Ve_Next(int ID)
 
     int iRoot=LEFT+MaxJ + 5;
     int jRoot=TOP + 1;
-    for(int i=0;i<pnext->Row;i++)
+    for(int i=0; i<pnext->Row; i++)
     {
-        for (int j=0;j<pnext->Col;j++)
+        for (int j=0; j<pnext->Col; j++)
         {
             if(pnext->arr[i][j]==1)
             {
@@ -59,14 +61,14 @@ void Xoa_Next()
 {
     int iRoot=LEFT+MaxJ+5;
     int jRoot=TOP + 1;
-    for(int i=0;i<4;i++)
+    for(int i=0; i<4; i++)
     {
-        for (int j=0;j<4;j++)
+        for (int j=0; j<4; j++)
         {
 
-                TextColor(0);
-                gotoXY(iRoot+j,jRoot+i);
-                cout << " ";
+            TextColor(0);
+            gotoXY(iRoot+j,jRoot+i);
+            cout << " ";
         }
 
     }
