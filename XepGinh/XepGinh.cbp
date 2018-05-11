@@ -32,20 +32,20 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="IMap.h" />
 		<Unit filename="INFO.cpp" />
 		<Unit filename="INFO.h" />
 		<Unit filename="Icheck.h" />
 		<Unit filename="Iconsole.h" />
 		<Unit filename="IdesignObject.h" />
 		<Unit filename="IdrawObject.h" />
+		<Unit filename="IgameScreen.h" />
 		<Unit filename="Imenu.h" />
 		<Unit filename="ImoveObject.h" />
-		<Unit filename="Map.cpp" />
 		<Unit filename="check.cpp" />
 		<Unit filename="console.cpp" />
 		<Unit filename="designObject.cpp" />
 		<Unit filename="drawObject.cpp" />
+		<Unit filename="gameScreen.cpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="menu.cpp" />
 		<Unit filename="moveObject.cpp" />

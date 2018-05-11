@@ -1,28 +1,23 @@
-#include"IMap.h"
+#include"IgameScreen.h"
 
-// ham ve ra khung man hinh
 
 void render()
 {
     int i, j;
-    for(i = LEFT; i <= LEFT + 10 + 1; i++) // cot
+    for(i = LEFT; i <= LEFT + 10 + 1; i++)
     {
-        for(j = TOP; j <= TOP + 18 + 1; j++) // hang
+        for(j = TOP; j <= TOP + 18 + 1; j++)
         {
-            if((j == TOP + 18 +1) && i > LEFT && i < LEFT + 10 + 1) // ve hang
+            /* draw row*/
+            if((j == TOP + 18 +1 || j == TOP) && i > LEFT && i < LEFT + 10 + 1)
             {
-                gotoXY(i, j); // hoi
-                TextColor(7);
-                cout << char(205);
-            }
-            if((j == TOP ) && i > LEFT && i < LEFT + 10 + 1) // ve hang
-            {
-                gotoXY(i, j); // hoi
+                gotoXY(i, j);
                 TextColor(7);
                 cout << char(205);
             }
 
-            if((i == LEFT || i == LEFT + 10 + 1) && j > TOP && j < TOP + 18 + 1) // ve cot
+            /* draw column*/
+            if((i == LEFT || i == LEFT + 10 + 1) && j > TOP && j < TOP + 18 + 1)
             {
                 gotoXY(i, j);
                 TextColor(7);
@@ -31,19 +26,22 @@ void render()
         }
     }
 
-    // goc trai tren cung
+    /* corner left up*/
     gotoXY(LEFT, TOP);
     TextColor(10);
     cout << char(219);
-    // goc phai tren cung
+
+    /* corner right up*/
     gotoXY(LEFT + 10 + 1, TOP);
     TextColor(10);
     cout << char(219);
-    // goc trai duoi cung
+
+    /* corner left down */
     gotoXY(LEFT, TOP + 18 + 1);
     TextColor(10);
     cout << char(219);
-    // goc phai duoi cung
+
+    /* corner right down*/
     gotoXY(LEFT + 10 + 1, TOP + 18 + 1);
     TextColor(10);
     cout << char(219);
@@ -52,7 +50,7 @@ void render()
 
 void veBangDiem(INFO info)
 {
-    TextColor(10); // cai nay dung cho het ca dc a
+    TextColor(10);
     gotoXY(LEFT + MaxJ + 4, TOP + 6);
     cout << "SCORE: " << info.score << endl;
     gotoXY(LEFT + MaxJ + 4, TOP + 7);
@@ -61,7 +59,8 @@ void veBangDiem(INFO info)
     cout << "SPEED: " << info.speed << endl;
 
 }
-// ham ve trang thai ma tran
+
+
 void disPlayBoard()
 {
     int i, j;
@@ -72,7 +71,7 @@ void disPlayBoard()
             if(Board[i][j] == 1 && i > 4)
             {
 
-                gotoXY(j + LEFT + 1, i + TOP + 1 - 4); // k hieu
+                gotoXY(j + LEFT + 1, i + TOP + 1 - 4);
                 TextColor(15);
                 cout << char(219);
             }
@@ -85,12 +84,12 @@ void disPlayBoard()
         }
     }
 }
-//  cap nhat lai toa do sau moi lan an diem
+
 void updateGame(int  row)
 {
     int i, j;
-    // hàng bat dau tu 4 -> 22
-    for(i = row; i > 0; i--) // > 4 hay > 0, tinh ca o ngoai bang a
+
+    for(i = row; i > 0; i--)
     {
         for(j = 0; j < MaxJ; j++)
         {
@@ -99,8 +98,8 @@ void updateGame(int  row)
     }
 
 }
-// gan gia tri cho bang khi moi khoi gach roi xuong
-void ganGiaTri(KhoiGach* pKhoiGach) // moi gan gia tri chuwa ve
+
+void ganGiaTri(KhoiGach* pKhoiGach)
 {
     int i, j;
     for(i = 0; i < pKhoiGach->Row; i++)
@@ -113,3 +112,4 @@ void ganGiaTri(KhoiGach* pKhoiGach) // moi gan gia tri chuwa ve
         }
     }
 }
+

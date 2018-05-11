@@ -21,6 +21,7 @@ int kiemTra(KhoiGach* pKhoiGach, INFO* info)
         countB = 0;
         for(j = 0; j < MaxJ; j++)
         {
+            // hoi
             if(Board[pKhoiGach->iBoard + i][j] == 1) // soa k phai la Board[i][j] == 1 vì lúc nay chưa gan gia tri cho bang
             {
                 countB++;
@@ -41,30 +42,40 @@ int kiemTra(KhoiGach* pKhoiGach, INFO* info)
     return 1;
 }
 
-
 bool ingameSence()
 {
     clrscr();
 
     int Id = randomObject();
-    KhoiGach * curr; // tao khoi gach
 
-    curr = TaoKhoiGach(Id); // random khoi gach
+    /* creat origin brick block */
+
+    KhoiGach * curr;
+    curr = TaoKhoiGach(Id);
+
+    /* creat ID random to creat next brick block */
 
     int IDKhoiTiepTheo = randomObject();
 
-    INFO info;  // khoi tao info ban dau
-    initGame(&info); // truyen info ban dau
+    /* creat origin info*/
 
-    char key; // nhap tu ban phim
-    clock_t Start, End; // thoi gian chay
-    // gna lai gia tri cho bang
+    INFO info;
+    initGame(&info);
+
+    char key;
+    clock_t Start, End;
+
+    /* creat origin matrix */
+
     for(int i = 1;i <= 20; i++)
     {
         for(int j = 1;j <= 10; j++)
             Board[i][j] = 0;
     }
-    render(); // ve khung game
+
+    /* play game*/
+
+    render();
     do
     {
         veBangDiem(info);
@@ -78,18 +89,21 @@ bool ingameSence()
         {
             if(kbhit())
             {
+                /* choice key from keyBoard */
                 key = _getch();
 
                 xoaKhoiGach(curr);
 
-                if( key == 'a' || key == 'A' || key == 75) // van bi loi
+                if( key == 'a' || key == 'A' || key == 75)
                     moveLeftObject(curr);
+
                 if( key == 'd' || key == 'D' || key == 77)
                     moveRightObject(curr);
-                if( key == 's' || key == 'S' || key == 80)
 
+                if( key == 's' || key == 'S' || key == 80)
                     moveDownObject(curr);
-                if( key == 'w' || key == 'W' || key == 72)// no k dung khi over game, k hien ra ten ng choi
+
+                if( key == 'w' || key == 'W' || key == 72)
                     rotateObject(curr);
 
 
@@ -98,34 +112,34 @@ bool ingameSence()
 
             End = clock();
 
-        }while(float(End - Start)/ CLK_TCK < info.speed); // choi duoc mot ti ai k chay duoc nua
+        }while(float(End - Start)/ CLK_TCK < info.speed);
 
         xoaKhoiGach(curr);
 
         if(moveDownObject(curr) == false)
         {
-            ganGiaTri(curr); // gan toa do khoi gach vua roi xuong cho bagn
+            /* Assigns values to the matrix for falling blocks*/
+            ganGiaTri(curr);
 
+            /* check to get score*/
             int result = kiemTra(curr, &info);
-            if(result == -1 || result == 2) // game over
+            if(result == -1 || result == 2)
                 break;
-            huyKhoiGach(curr); // giai phong bo nho
 
+            /* free memory*/
+            huyKhoiGach(curr);
+
+            /* creat next brick block */
             curr = TaoKhoiGach(IDKhoiTiepTheo);
-            IDKhoiTiepTheo = randomObject();// tao khoi gach xuat hien tiep theo
-            // hoi cho vao trong thi khong bi nhay nua
-            disPlayBoard(); // ve ma tran
+            IDKhoiTiepTheo = randomObject();
+
+            /* assign value to matrix*/
+            disPlayBoard();
         }
 
     }while(1);
 
     huyKhoiGach(curr);
-
-//    gotoXY(30,25);
-//
-//    clrscr();
-
-
 
     /* Win Game*/ // trang tri them
     if(info.score >= 5000)
@@ -161,4 +175,3 @@ bool ingameSence()
         return false;
     return true;
 }
-

@@ -133,14 +133,14 @@
 1525186374 c:\users\black\game_quan\xepginh\iconsole.h
 	<windows.h>
 
-1525626005 source:c:\users\black\new_game\xepginh\check.cpp
+1525943039 source:c:\users\black\new_game\xepginh\check.cpp
 	"Icheck.h"
 
-1525617708 c:\users\black\new_game\xepginh\icheck.h
+1525939465 c:\users\black\new_game\xepginh\icheck.h
 	<conio.h>
 	"ImoveObject.h"
 	"INFO.h"
-	"IMap.h"
+	"IgameScreen.h"
 	"IdrawObject.h"
 
 1525618473 c:\users\black\new_game\xepginh\imoveobject.h
@@ -155,11 +155,11 @@
 1525619040 c:\users\black\new_game\xepginh\iconsole.h
 	<windows.h>
 
-1525623637 c:\users\black\new_game\xepginh\info.h
+1525791359 c:\users\black\new_game\xepginh\info.h
 	<iostream>
 	"Iconsole.h"
 
-1525417559 c:\users\black\new_game\xepginh\imap.h
+1525789989 c:\users\black\new_game\xepginh\imap.h
 	"Iconsole.h"
 	"INFO.h"
 	"IdesignObject.h"
@@ -184,7 +184,7 @@
 1525625679 source:c:\users\black\new_game\xepginh\info.cpp
 	"INFO.h"
 
-1525615749 source:c:\users\black\new_game\xepginh\main.cpp
+1525791067 source:c:\users\black\new_game\xepginh\main.cpp
 	<iostream>
 	<ctime>
 	<cstdlib>
@@ -192,7 +192,7 @@
 	<conio.h>
 	"IdesignObject.h"
 	"ImoveObject.h"
-	"IMap.h"
+	"IgameScreen.h"
 	"INFO.h"
 	"Icheck.h"
 	"IdrawObject.h"
@@ -203,12 +203,21 @@
 	<iostream>
 	<conio.h>
 
-1525418032 source:c:\users\black\new_game\xepginh\map.cpp
+1525790679 source:c:\users\black\new_game\xepginh\map.cpp
 	"IMap.h"
 
-1525625651 source:c:\users\black\new_game\xepginh\menu.cpp
+1525940575 source:c:\users\black\new_game\xepginh\menu.cpp
 	"Imenu.h"
 
 1525618681 source:c:\users\black\new_game\xepginh\moveobject.cpp
 	"ImoveObject.h"
+
+1525943283 source:c:\users\black\new_game\xepginh\gamescreen.cpp
+	"IgameScreen.h"
+
+1525939465 c:\users\black\new_game\xepginh\igamescreen.h
+	"Iconsole.h"
+	"INFO.h"
+	"IdesignObject.h"
+	<iostream>
 

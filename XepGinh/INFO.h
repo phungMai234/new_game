@@ -45,7 +45,7 @@ void initGame(INFO* info);
  *
  *@Return: <none>
  */
-void updateINFO(INFO* info);
+void updateINFO(INFO* info); /* co nen di chuyen sang ham screen*/
 
 
 #endif // INFO_H_INCLUDED

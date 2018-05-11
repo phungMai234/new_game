@@ -6,7 +6,7 @@
 
 #include"IdesignObject.h"
 #include"ImoveObject.h"
-#include"IMap.h"
+#include"IgameScreen.h"
 #include"INFO.h"
 #include"Icheck.h"
 #include"IdrawObject.h"
